@@ -11,6 +11,14 @@
     margin: 0 -50px;
   }
 
+  @media screen and (min-width: 1600px) {
+    margin: 0 -90px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin: 0 -100px;
+  }
+
   &__wrapper {
     width: 100%;
   }
