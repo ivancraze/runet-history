@@ -1,0 +1,46 @@
+.play {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+
+  &-virus {
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+
+      &_small {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 425px) {
+      margin-top: -30px;
+    }
+
+    &__img {
+
+    }
+
+    &__text {
+      font-family: 'Comic';
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #FFF;
+      text-transform: uppercase;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}

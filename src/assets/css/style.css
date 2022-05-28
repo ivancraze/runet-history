@@ -1,0 +1,334 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1960px;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Light.eot");
+  src: url("src/assets/fonts/Onest-Light.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Comic CAT";
+  src: url("src/assets/fonts/ComicCAT.eot");
+  src: url("src/assets/fonts/ComicCAT.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/ComicCAT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Regular.eot");
+  src: url("src/assets/fonts/Onest-Regular.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Bold.eot");
+  src: url("src/assets/fonts/Onest-Bold.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Medium.eot");
+  src: url("src/assets/fonts/Onest-Medium.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-ExtraBold.eot");
+  src: url("src/assets/fonts/Onest-ExtraBold.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Black.eot");
+  src: url("src/assets/fonts/Onest-Black.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("src/assets/fonts/Onest-Thin.eot");
+  src: url("src/assets/fonts/Onest-Thin.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+.button {
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button_red {
+  border-radius: 96px;
+  background: #E13914;
+  font-family: "Comic CAT", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding: 12px 40px;
+}
+.button_red:hover {
+  box-shadow: 0px 2px 14px rgba(225, 57, 20, 0.8);
+}
+.button_red:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+.button_black {
+  border-radius: 96px;
+  background: #000000;
+  font-family: "Comic CAT", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding: 12px 40px;
+}
+.button_black:hover {
+  background: #E13914;
+  box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
+}
+.button_black:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+.button_grey {
+  border-radius: 96px;
+  background: #EEEEEE;
+  border-radius: 96px;
+  font-family: "Comic CAT", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000;
+  padding: 12px 40px;
+}
+.button_grey:hover {
+  color: #FFFFFF;
+  background: #E13914;
+  box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
+}
+.button_grey:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+  height: 160px;
+  overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    height: 212px;
+  }
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+.play-virus {
+  display: flex;
+  justify-content: space-between;
+}
+.play-virus__icon_small {
+  width: 40px;
+  height: 40px;
+}
+.play-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 425px) {
+  .play-button {
+    margin-top: -30px;
+  }
+}
+.play-button__text {
+  font-family: "Comic";
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #FFF;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about {
+  margin-top: 40px;
+}
+.about-item {
+  position: relative;
+}
+.about-item:not(:first-child) {
+  margin-top: 48px;
+}
+.about-item__img {
+  display: flex;
+  justify-content: center;
+}
+.about-item__img_fox {
+  position: absolute;
+  left: -80px;
+  top: -50px;
+}
+@media screen and (min-width: 375px) {
+  .about-item__img_fox {
+    top: -90px;
+    left: -60px;
+  }
+}
+.about-item__img_fox img {
+  width: 144px;
+  height: 140px;
+}
+.about-item__title {
+  position: relative;
+}
+.about-item__title:not(:first-child) {
+  margin-top: 28px;
+}
+@media screen and (min-width: 425px) {
+  .about-item__title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+}
+.about-item__title-text {
+  font-family: "Comic CAT", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+}
+.about-item__title-icon {
+  position: relative;
+  left: 180px;
+}
+@media screen and (min-width: 425px) {
+  .about-item__title-icon {
+    position: static;
+    left: 230px;
+  }
+}
+.about-item__text {
+  font-family: "Onest", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  margin-top: 8px;
+}
+.about-item__text_red {
+  color: #E13914;
+}
+
+.footer {
+  margin-top: 48px;
+  width: 100%;
+}
+.footer-images {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.footer-images img {
+  width: 120px;
+}
+.footer-images img:nth-child(2n+1) {
+  display: none;
+}
+.footer-share {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-share__text {
+  font-family: "Onest", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.footer-share__wrapper {
+  margin-top: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer-copyright {
+  margin-top: 52px;
+  font-family: "Onest", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+}

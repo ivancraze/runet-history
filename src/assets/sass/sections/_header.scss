@@ -1,0 +1,13 @@
+.header {
+}
+
+.logo {
+  height: 160px;
+  overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    height: 212px;
+  }
+}
+
+
