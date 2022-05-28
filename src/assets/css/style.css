@@ -40,86 +40,71 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1960px;
-  padding: 0 20px;
+  max-width: 1920px;
   overflow-x: hidden;
-}
-@media screen and (min-width: 768px) {
-  body {
-    padding: 0 50px;
-  }
-}
-@media screen and (min-width: 1366px) {
-  body {
-    padding: 0 90px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  body {
-    padding: 0 100px;
-  }
 }
 
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Light.eot");
-  src: url("src/assets/fonts/Onest-Light.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Light.ttf") format("truetype");
+  src: url("../fonts/Onest-Light.eot");
+  src: url("../fonts/Onest-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Comic CAT";
-  src: url("src/assets/fonts/ComicCAT.eot");
-  src: url("src/assets/fonts/ComicCAT.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/ComicCAT.ttf") format("truetype");
+  src: url("../fonts/ComicCAT.eot");
+  src: url("../fonts/ComicCAT.eot");
+  src: url("../fonts/ComicCAT.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicCAT.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Regular.eot");
-  src: url("src/assets/fonts/Onest-Regular.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Regular.ttf") format("truetype");
+  src: url("../fonts/Onest-Regular.eot");
+  src: url("../fonts/Onest-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Bold.eot");
-  src: url("src/assets/fonts/Onest-Bold.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Bold.ttf") format("truetype");
+  src: url("../fonts/Onest-Bold.eot");
+  src: url("../fonts/Onest-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Medium.eot");
-  src: url("src/assets/fonts/Onest-Medium.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Medium.ttf") format("truetype");
+  src: url("../fonts/Onest-Medium.eot");
+  src: url("../fonts/Onest-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-ExtraBold.eot");
-  src: url("src/assets/fonts/Onest-ExtraBold.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/Onest-ExtraBold.eot");
+  src: url("../fonts/Onest-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Black.eot");
-  src: url("src/assets/fonts/Onest-Black.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Black.ttf") format("truetype");
+  src: url("../fonts/Onest-Black.eot");
+  src: url("../fonts/Onest-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Onest";
-  src: url("src/assets/fonts/Onest-Thin.eot");
-  src: url("src/assets/fonts/Onest-Thin.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/Onest-Thin.ttf") format("truetype");
+  src: url("../fonts/Onest-Thin.eot");
+  src: url("../fonts/Onest-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -228,6 +213,7 @@ body {
 .play-virus {
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
 }
 @media screen and (min-width: 768px) {
   .play-virus {
@@ -249,7 +235,7 @@ body {
 }
 @media screen and (min-width: 1920px) {
   .play-virus {
-    right: 240px;
+    right: 300px;
   }
 }
 .play-virus__icon_small {
@@ -262,9 +248,19 @@ body {
   }
 }
 .play-button {
-  position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.play-button__wrapper {
+  position: relative;
+}
+.play-button__wrapper:hover img {
+  animation: spin 3s infinite linear;
 }
 @media screen and (min-width: 425px) {
   .play-button {
@@ -279,6 +275,7 @@ body {
 .play-button__img {
   width: 200px;
   height: 200px;
+  cursor: pointer;
 }
 @media screen and (min-width: 480px) {
   .play-button__img {
@@ -287,7 +284,7 @@ body {
   }
 }
 .play-button__text {
-  font-family: "Comic";
+  font-family: "Comic CAT", sans-serif;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
@@ -297,6 +294,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .about {
@@ -324,7 +322,17 @@ body {
 @media screen and (min-width: 1366px) {
   .about-item {
     flex-direction: column;
-    max-width: 450px;
+    max-width: 425px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about-item {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-item {
+    max-width: 600px;
   }
 }
 .about-item__img {
@@ -504,6 +512,11 @@ body {
     margin-top: -320px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .about-item_lebedev {
+    margin-top: -200px;
+  }
+}
 .about-item_devil {
   margin-top: 48px;
 }
@@ -521,7 +534,7 @@ body {
   .about-item_devil {
     flex-direction: column;
     gap: 0;
-    margin-top: -200px;
+    margin-top: -290px;
   }
   .about-item_devil .about-item__img {
     display: none;
@@ -532,6 +545,11 @@ body {
   .about-item_devil .about-item__title {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about-item_devil {
+    margin-top: -150px;
   }
 }
 
@@ -550,6 +568,16 @@ body {
     margin: 0 -50px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .planet {
+    margin: 0 -90px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .planet {
+    margin: 0 -100px;
+  }
+}
 .planet__wrapper {
   width: 100%;
 }
@@ -557,9 +585,10 @@ body {
   display: none;
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .planet__img {
     display: block;
+    width: 100%;
   }
 }
 .planet__img_small {
@@ -570,7 +599,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .planet__img_small {
     display: none;
   }
@@ -579,7 +608,7 @@ body {
   position: absolute;
   display: none;
   width: 100%;
-  top: -1060px;
+  top: -1150px;
   z-index: -1;
   pointer-events: none;
 }
@@ -591,11 +620,6 @@ body {
 @media screen and (min-width: 1600px) {
   .planet__timeline {
     top: -1200px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .planet__timeline {
-    top: -1260px;
   }
 }
 
@@ -714,5 +738,24 @@ body {
     margin: 58px 0;
     font-size: 18px;
     line-height: 130%;
+  }
+}
+
+.container {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 0 90px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    padding: 0 100px;
   }
 }

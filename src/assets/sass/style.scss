@@ -8,3 +8,19 @@
 @import 'sections/_about.scss';
 @import 'sections/_planet.scss';
 @import 'sections/_footer.scss';
+
+.container {
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding: 0 90px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0 100px;
+  }
+}

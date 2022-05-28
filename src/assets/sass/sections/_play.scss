@@ -16,6 +16,7 @@
   &-virus {
     display: flex;
     justify-content: space-between;
+    pointer-events: none;
 
     @media screen and (min-width: 768px) {
       position: absolute;
@@ -33,7 +34,7 @@
     }
 
     @media screen and (min-width: 1920px) {
-      right: 240px;
+      right: 300px;
     }
 
     &__icon {
@@ -50,9 +51,23 @@
   }
 
   &-button {
-    position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+
+      &:hover img {
+        animation: spin 3s infinite linear;
+      }
+    }
 
     @media screen and (min-width: 425px) {
       margin-top: -30px;
@@ -65,6 +80,7 @@
     &__img {
       width: 200px;
       height: 200px;
+      cursor: pointer;
 
       @media screen and (min-width: 480px) {
         width: 240px;
@@ -73,7 +89,7 @@
     }
 
     &__text {
-      font-family: 'Comic';
+      font-family: 'Comic CAT', sans-serif;
       font-size: 26px;
       line-height: 30px;
       font-weight: 400;
@@ -83,6 +99,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
+      cursor: pointer;
     }
   }
 }

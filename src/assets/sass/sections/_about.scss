@@ -20,7 +20,15 @@
 
     @media screen and (min-width: 1366px) {
       flex-direction: column;
-      max-width: 450px;
+      max-width: 425px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      max-width: 500px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      max-width: 600px;
     }
 
     &__img {
@@ -193,6 +201,10 @@
         margin-left: auto;
         margin-top: -320px;
       }
+
+      @media screen and (min-width: 1920px) {
+        margin-top: -200px;
+      }
     }
 
     &_devil {
@@ -211,7 +223,7 @@
       @media screen and (min-width: 1366px) {
         flex-direction: column;
         gap: 0;
-        margin-top: -200px;
+        margin-top: -290px;
 
         .about-item__img {
           display: none;
@@ -226,6 +238,10 @@
           justify-content: space-between;
         }
 
+      }
+
+      @media screen and (min-width: 1600px) {
+        margin-top: -150px;
       }
     }
   }

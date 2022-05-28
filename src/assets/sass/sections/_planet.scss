@@ -27,8 +27,9 @@
     display: none;
     width: 100%;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       display: block;
+      width: 100%;
     }
 
     &_small {
@@ -38,7 +39,7 @@
         display: block;
       }
 
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1025px) {
         display: none;
       }
     }
@@ -48,7 +49,7 @@
     position: absolute;
     display: none;
     width: 100%;
-    top: -1060px;
+    top: -1150px;
     z-index: -1;
     pointer-events: none;
 
@@ -58,10 +59,6 @@
 
     @media screen and (min-width: 1600px) {
       top: -1200px;
-    }
-
-    @media screen and (min-width: 1920px) {
-      top: -1260px;
     }
   }
 }
