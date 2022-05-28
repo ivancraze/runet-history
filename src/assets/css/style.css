@@ -36,11 +36,9 @@ button:focus {
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-x: hidden;
 }
 
@@ -267,8 +265,15 @@ body {
   }
 }
 .play-button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1366px) {
+  .play-button {
+    z-index: 10;
+    position: sticky;
+    top: 40vh;
+  }
 }
 @keyframes spin {
   100% {
@@ -781,6 +786,21 @@ body {
 .results__wrapper {
   display: flex;
 }
+.results__title {
+  font-family: "Comic CAT";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.results__title--red {
+  color: #E13914;
+}
+
+.results-img {
+  display: none;
+}
 
 .container {
   padding: 0 20px;
@@ -804,4 +824,8 @@ body {
   .container {
     padding: 0 120px;
   }
+}
+
+.content-wrapper {
+  position: relative;
 }

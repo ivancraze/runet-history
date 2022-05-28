@@ -16,8 +16,21 @@
   &__wrapper {
     display: flex;
   }
+
+  &__title {
+    font-family: 'Comic CAT';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &--red {
+      color: #E13914;
+    }
+  }
 }
 
 .results-img {
-  //display: none;
+  display: none;
 }
