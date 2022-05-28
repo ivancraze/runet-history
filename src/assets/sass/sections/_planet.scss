@@ -1,0 +1,25 @@
+.planet {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 80px -50px 0 -50px;
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__img {
+    display: none;
+    width: 100%;
+
+    &_small {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

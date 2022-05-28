@@ -1,16 +1,32 @@
 .about {
   margin-top: 40px;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
   &-item {
     position: relative;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
     &:not(:first-child){
       margin-top: 48px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 100px;
+      }
     }
 
     &__img {
       display: flex;
       justify-content: center;
+
+      @media screen and (min-width: 768px) {
+        display: inline;
+      }
 
       &_fox {
         position: absolute;
@@ -22,12 +38,63 @@
           left: -60px;
         }
 
+        @media screen and (min-width: 425px) {
+          top: -110px;
+          left: -60px;
+        }
+
+        @media screen and (min-width: 480px) {
+          top: -144px;
+          left: -60px;
+        }
+
+        @media screen and (min-width: 768px) {
+          top: -220px;
+          left: 0;
+        }
+
         img {
           width: 144px;
           height: 140px;
         }
       }
 
+      &_tower {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+          display: inline;
+          position: absolute;
+          top: -480px;
+          right: 0;
+        }
+
+        img {
+          height: 382px;
+        }
+      }
+
+    }
+
+    &_fawkes {
+      @media screen and (min-width: 768px) {
+        padding-right: 140px;
+      }
+    }
+
+    &_lebedev {
+      @media screen and (min-width: 768px) {
+      }
+    }
+
+    &_devil {
+      @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+
+        > .about-item__img {
+          padding-top: 70px;
+        }
+      }
     }
 
     &__title {
@@ -45,11 +112,24 @@
         gap: 50px;
       }
 
+      @media screen and (min-width: 480px) {
+        gap: 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        gap: 100px;
+      }
+
       &-text {
         font-family: 'Comic CAT', sans-serif;
         font-weight: 400;
         font-size: 40px;
         line-height: 120%;
+
+        @media screen and (min-width: 480px) {
+          font-size: 60px;
+          line-height: 110%;
+        }
       }
 
       &-icon {
@@ -71,6 +151,11 @@
       line-height: 130%;
       color: #000000;
       margin-top: 8px;
+
+      @media screen and (min-width: 425px) {
+        font-size: 28px;
+        line-height: 130%;
+      }
 
       &_red {
         color: #E13914;

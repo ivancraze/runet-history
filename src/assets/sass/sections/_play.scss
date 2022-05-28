@@ -3,16 +3,31 @@
   flex-direction: column;
   width: 100%;
   margin-top: 10px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
 
   &-virus {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      right: 70px;
+      top: 60px;
+    }
 
     &__icon {
 
       &_small {
         width: 40px;
         height: 40px;
+        
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -26,8 +41,18 @@
       margin-top: -30px;
     }
 
-    &__img {
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
 
+    &__img {
+      width: 200px;
+      height: 200px;
+
+      @media screen and (min-width: 480px) {
+        width: 240px;
+        height: 240px;
+      }
     }
 
     &__text {
