@@ -9,6 +9,10 @@
     margin-top: 50px;
   }
 
+  @media screen and (min-width: 1366px) {
+    margin-top: 130px;
+  }
+
   &-virus {
     display: flex;
     justify-content: space-between;
@@ -17,6 +21,12 @@
       position: absolute;
       right: 70px;
       top: 60px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      position: absolute;
+      right: 160px;
+      top: -100px;
     }
 
     &__icon {
