@@ -12,6 +12,10 @@
       display: flex;
     }
 
+    @media screen and (min-width: 1366px) {
+      flex-direction: column;
+    }
+
     &:not(:first-child){
       margin-top: 48px;
 
@@ -63,10 +67,15 @@
         display: none;
 
         @media screen and (min-width: 768px) {
-          display: inline;
+          display: inline-flex;
           position: absolute;
           top: -480px;
           right: 0;
+        }
+
+        @media screen and (min-width: 1366px) {
+          position: static;
+          order: -1;
         }
 
         img {
@@ -80,20 +89,33 @@
       @media screen and (min-width: 768px) {
         padding-right: 140px;
       }
+
+      @media screen and (min-width: 1366px) {
+        padding-right: 0;
+        max-width: 400px;
+      }
     }
 
     &_lebedev {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1366px) {
+        max-width: 400px;
+        margin-left: auto;
       }
+
     }
 
     &_devil {
       @media screen and (min-width: 768px) {
+        gap: 50px;
         flex-direction: row-reverse;
 
         > .about-item__img {
           padding-top: 70px;
         }
+      }
+
+      @media screen and (min-width: 1366px) {
+        flex-direction: column;
       }
     }
 

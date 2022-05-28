@@ -1,5 +1,6 @@
 .planet {
   display: none;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -14,12 +15,31 @@
     display: none;
     width: 100%;
 
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+
     &_small {
       display: none;
 
       @media screen and (min-width: 768px) {
         display: block;
       }
+
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  &__timeline {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 1px;
+
+    @media screen and (min-width: 1366px) {
+      display: block;
     }
   }
 }

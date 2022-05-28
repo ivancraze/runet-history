@@ -85,6 +85,7 @@
     <section class="planet">
         <div class="planet__wrapper">
             <img class="planet__img" src="./assets/img/planet.png" alt="Planet">
+            <img class="planet__timeline" src="./assets/img/timeline.svg" alt="TimeLine">
             <img class="planet__img planet__img_small" src="./assets/img/planet-small.png" alt="Planet">
         </div>
     </section>
@@ -109,5 +110,25 @@
             </span>
         </div>
     </footer>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBNLfOriGZGZ2JQcP8cYMnBAKJvNgQc86g",
+            authDomain: "runet-history.firebaseapp.com",
+            projectId: "runet-history",
+            storageBucket: "runet-history.appspot.com",
+            messagingSenderId: "1046511742180",
+            appId: "1:1046511742180:web:d22034ae7a74fa7a8c10f1"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
