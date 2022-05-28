@@ -1,0 +1,23 @@
+.results {
+  margin-top: 25px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-top: 25px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.results-img {
+  //display: none;
+}

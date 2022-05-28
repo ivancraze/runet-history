@@ -1,4 +1,21 @@
 .header {
+  &__link {
+    .clouds {
+      height: 75px;
+
+      @media screen and (min-width: 1366px) {
+        height: 98px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        height: 114px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        height: 137px;
+      }
+    }
+  }
 }
 
 .logo {
