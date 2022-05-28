@@ -2,6 +2,14 @@
   margin-top: 48px;
   width: 100%;
 
+  @media screen and (min-width: 1600px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 150px;
+  }
+
   &-images {
     display: flex;
     flex-wrap: nowrap;

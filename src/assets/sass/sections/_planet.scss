@@ -47,5 +47,13 @@
     @media screen and (min-width: 1366px) {
       display: block;
     }
+
+    @media screen and (min-width: 1600px) {
+      top: -1200px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      top: -1260px;
+    }
   }
 }

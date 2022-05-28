@@ -24,9 +24,16 @@
     }
 
     @media screen and (min-width: 1366px) {
-      position: absolute;
       right: 160px;
       top: -100px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      right: 200px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      right: 240px;
     }
 
     &__icon {
