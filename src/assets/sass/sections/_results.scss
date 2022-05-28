@@ -18,7 +18,7 @@
   }
 
   &__title {
-    font-family: 'Comic CAT';
+    font-family: 'Comic CAT', sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 120%;
@@ -28,9 +28,30 @@
     &--red {
       color: #E13914;
     }
+
+    @media screen and (min-width: 480px) {
+      font-size: 60px;
+      line-height: 110%;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1366px) {
+      font-size: 78px;
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
   }
 }
 
 .results-img {
   display: none;
+
+  @media screen and (min-width: 1366px) {
+    display: block;
+  }
 }

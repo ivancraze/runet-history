@@ -166,47 +166,54 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.header__link .clouds {
-  height: 75px;
-}
-@media screen and (min-width: 1366px) {
-  .header__link .clouds {
-    height: 98px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .header__link .clouds {
-    height: 114px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .header__link .clouds {
-    height: 137px;
-  }
-}
-
-.logo {
-  height: 160px;
+.header__container {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 }
+.header .logo {
+  display: block;
+}
+.header .logo--main {
+  height: 160px;
+}
 @media screen and (min-width: 480px) {
-  .logo {
+  .header .logo--main {
     height: 212px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .logo {
+  .header .logo--main {
     height: 280px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .logo {
+  .header .logo--main {
     height: 330px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .logo {
+  .header .logo--main {
     height: 400px;
+  }
+}
+.header .logo--clouds {
+  height: 75px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1366px) {
+  .header .logo--clouds {
+    height: 98px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header .logo--clouds {
+    height: 114px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header .logo--clouds {
+    height: 137px;
   }
 }
 
@@ -288,7 +295,7 @@ body {
 }
 @media screen and (min-width: 425px) {
   .play-button {
-    margin-top: -30px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -787,7 +794,7 @@ body {
   display: flex;
 }
 .results__title {
-  font-family: "Comic CAT";
+  font-family: "Comic CAT", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 120%;
@@ -797,9 +804,40 @@ body {
 .results__title--red {
   color: #E13914;
 }
+@media screen and (min-width: 480px) {
+  .results__title {
+    font-size: 60px;
+    line-height: 110%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .results__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .results__title {
+    font-size: 78px;
+  }
+}
+.results__text {
+  margin-top: 25px;
+}
 
 .results-img {
   display: none;
+}
+@media screen and (min-width: 1366px) {
+  .results-img {
+    display: block;
+  }
+}
+
+.share-img {
+  width: 160px;
+}
+.share-img__seeds {
+  max-width: 100%;
 }
 
 .container {
