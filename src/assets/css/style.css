@@ -1070,6 +1070,90 @@ body {
   }
 }
 
+.authors {
+  margin-top: 72px;
+}
+
+.authors-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.authors-title__text {
+  font-family: "Comic CAT", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.authors-title__img {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .authors-title__img {
+    display: block;
+  }
+}
+
+.authors-content {
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  max-width: 900px;
+}
+@media screen and (min-width: 768px) {
+  .authors-content {
+    max-width: unset;
+  }
+}
+
+.authors-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  max-width: 144px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .authors-item {
+    max-width: 200px;
+  }
+}
+.authors-item__image {
+  width: 144px;
+  height: 144px;
+}
+@media screen and (min-width: 768px) {
+  .authors-item__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+.authors-item__image img {
+  max-width: 100%;
+}
+.authors-item__name {
+  margin-top: 16px;
+  font-weight: 500;
+}
+.authors-item__position {
+  margin-top: 6px;
+  font-weight: 400;
+}
+
 .container {
   padding: 0 20px;
 }
