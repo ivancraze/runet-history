@@ -165,6 +165,11 @@ body {
 .button_grey:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
+@media screen and (min-width: 480px) {
+  .button {
+    font-size: 24px;
+  }
+}
 
 .header__container {
   display: flex;
@@ -954,7 +959,14 @@ body {
 }
 .stickers__button {
   margin-top: 28px;
-  max-width: 370px;
+  max-width: 380px;
+  font-size: 20px;
+  z-index: 2;
+}
+@media screen and (min-width: 480px) {
+  .stickers__button {
+    font-size: 34px;
+  }
 }
 
 .stickers-text__wrapper {
@@ -993,6 +1005,68 @@ body {
     display: flex;
     top: -70px;
     gap: 510px;
+  }
+}
+
+.history {
+  margin-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .history {
+    margin-top: 300px;
+  }
+}
+.history__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history__logo {
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .history__logo {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .history__logo {
+    max-width: 580px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .history__logo {
+    max-width: 640px;
+  }
+}
+.history__timeline {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .history__timeline {
+    display: block;
+    top: -200px;
+  }
+}
+.history__button {
+  margin-top: 24px;
+  max-width: fit-content;
+  font-size: 20px;
+  z-index: 2;
+}
+@media screen and (min-width: 480px) {
+  .history__button {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .history__button {
+    margin-top: 75px;
   }
 }
 

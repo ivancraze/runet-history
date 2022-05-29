@@ -40,6 +40,7 @@
       color: rgba(255, 255, 255, 0.4);
     }
   }
+
   &_grey {
     border-radius: 96px;
     background: #EEEEEE;
@@ -59,5 +60,9 @@
     &:disabled {
       color: rgba(255, 255, 255, 0.4);
     }
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
   }
 }
