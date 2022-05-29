@@ -36,6 +36,8 @@ button:focus {
 
 body {
   min-height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -124,7 +126,7 @@ body {
   padding: 12px 40px;
 }
 .button_red:hover {
-  box-shadow: 0px 2px 14px rgba(225, 57, 20, 0.8);
+  box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
 }
 .button_red:disabled {
   color: rgba(255, 255, 255, 0.4);
@@ -149,7 +151,6 @@ body {
 .button_grey {
   border-radius: 96px;
   background: #EEEEEE;
-  border-radius: 96px;
   font-family: "Comic CAT", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -206,7 +207,7 @@ body {
   height: 75px;
   overflow: hidden;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .header .logo--clouds {
     height: 98px;
   }
@@ -226,65 +227,63 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 60px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .play {
-    margin-top: 50px;
+    margin-top: 0;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .play {
-    margin-top: 130px;
+    padding-top: 60px;
   }
 }
 .play-virus {
   display: flex;
-  justify-content: space-between;
   pointer-events: none;
+  position: absolute;
+  bottom: 200px;
+  left: 4%;
+  right: 4%;
 }
 @media screen and (min-width: 768px) {
   .play-virus {
-    position: absolute;
-    right: 70px;
-    top: 60px;
+    bottom: 100px;
+    left: 13%;
+    right: 13%;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .play-virus {
-    right: 160px;
-    top: -100px;
+    bottom: 300px;
   }
 }
-@media screen and (min-width: 1600px) {
-  .play-virus {
-    right: 200px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .play-virus {
-    right: 300px;
-  }
-}
-.play-virus__icon_small {
+.play-virus__icon--left {
   width: 40px;
   height: 40px;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .play-virus__icon_small {
+  .play-virus__icon--left {
     display: none;
   }
+}
+.play-virus__icon--right {
+  margin-left: auto;
 }
 .play-button {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .play-button {
     z-index: 10;
     position: sticky;
-    top: 40vh;
+    top: 36vh;
+    margin-top: 120px;
   }
 }
 @keyframes spin {
@@ -297,11 +296,6 @@ body {
 }
 .play-button__wrapper:hover img {
   animation: spin 3s infinite linear;
-}
-@media screen and (min-width: 425px) {
-  .play-button {
-    margin-top: 40px;
-  }
 }
 .play-button__img {
   width: 200px;
@@ -324,7 +318,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   cursor: pointer;
 }
 
@@ -336,7 +330,7 @@ body {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about {
     margin-top: 0;
     width: 100%;
@@ -350,7 +344,7 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item {
     flex-direction: column;
     max-width: 425px;
@@ -377,34 +371,30 @@ body {
 }
 .about-item__img_fox {
   position: absolute;
-  left: -80px;
-  top: -50px;
+  top: -130px;
 }
 @media screen and (min-width: 375px) {
   .about-item__img_fox {
-    top: -90px;
     left: -60px;
   }
 }
 @media screen and (min-width: 425px) {
   .about-item__img_fox {
-    top: -110px;
     left: -60px;
   }
 }
 @media screen and (min-width: 480px) {
   .about-item__img_fox {
-    top: -144px;
     left: -60px;
   }
 }
 @media screen and (min-width: 768px) {
   .about-item__img_fox {
-    top: -220px;
+    top: -270px;
     left: 0;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item__img_fox {
     top: -144px;
     left: 0;
@@ -414,7 +404,7 @@ body {
   width: 144px;
   height: 140px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item__img_fox img {
     width: 181px;
     height: 175px;
@@ -431,7 +421,7 @@ body {
     right: 0;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item__img_tower {
     order: -1;
     top: -40px;
@@ -440,7 +430,7 @@ body {
 .about-item__img_tower img {
   height: 382px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item__img_tower img {
     height: 231px;
   }
@@ -470,7 +460,7 @@ body {
     gap: 100px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item__title {
     gap: 0;
   }
@@ -523,7 +513,7 @@ body {
     padding-right: 140px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item_fawkes {
     padding-right: 0;
     margin-top: -155px;
@@ -537,7 +527,7 @@ body {
     margin-top: 100px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item_lebedev {
     margin-left: auto;
     margin-top: -320px;
@@ -561,7 +551,7 @@ body {
     padding-top: 70px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .about-item_devil {
     flex-direction: column;
     gap: 0;
@@ -594,7 +584,7 @@ body {
     margin: 80px -50px 0 -50px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .planet {
     margin: 0 -50px;
   }
@@ -643,7 +633,7 @@ body {
   z-index: -1;
   pointer-events: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .planet__timeline {
     display: block;
   }
@@ -673,7 +663,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .footer-images {
     justify-content: space-evenly;
     align-items: flex-end;
@@ -683,7 +673,7 @@ body {
   width: 100px;
   height: 112px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .footer-images__callcenter {
     padding-bottom: 100px;
   }
@@ -694,7 +684,7 @@ body {
 .footer-images img:nth-child(2n+1) {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .footer-images img:nth-child(2n+1) {
     display: inline;
   }
@@ -783,7 +773,7 @@ body {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .results {
     margin-top: 25px;
   }
@@ -819,7 +809,7 @@ body {
     text-align: left;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .results__title {
     font-size: 78px;
   }
@@ -842,7 +832,7 @@ body {
     margin-top: 16px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .results__text {
     max-width: 600px;
   }
@@ -873,7 +863,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .results-img {
     display: block;
     min-width: 466px;
@@ -897,7 +887,7 @@ body {
     margin-top: 68px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .share {
     margin-top: 68px;
   }
@@ -1009,7 +999,7 @@ body {
   display: none;
   position: absolute;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .stickers-images__top {
     display: flex;
     top: -390px;
@@ -1116,7 +1106,7 @@ body {
 .authors-title__img {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .authors-title__img {
     display: block;
   }
@@ -1179,26 +1169,26 @@ body {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 50px;
+    padding: 0 40px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .container {
-    padding: 0 90px;
+    padding: 0 80px;
   }
 }
 @media screen and (min-width: 1600px) {
   .container {
-    padding: 0 100px;
+    padding: 0 90px;
   }
 }
 @media screen and (min-width: 1920px) {
   .container {
-    padding: 0 120px;
+    padding: 0 110px;
   }
 }
 
@@ -1215,7 +1205,7 @@ body {
     padding: 0 65px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .container-win {
     padding: 0 85px;
   }

@@ -5,7 +5,7 @@
     margin-top: 50px;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 25px;
   }
 
@@ -25,7 +25,7 @@
     line-height: 120%;
     text-align: center;
     text-transform: uppercase;
-    
+
     &--red {
       color: #E13914;
     }
@@ -39,7 +39,7 @@
       text-align: left;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1280px) {
       font-size: 78px;
     }
   }
@@ -62,7 +62,7 @@
       margin-top: 16px;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1280px) {
       max-width: 600px;
     }
 
@@ -95,7 +95,7 @@
     }
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1280px) {
     display: block;
     min-width: 466px;
     min-height: 466px;

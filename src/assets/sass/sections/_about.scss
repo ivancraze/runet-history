@@ -6,7 +6,7 @@
     margin-top: 60px;
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 0;
     width: 100%;
   }
@@ -18,7 +18,7 @@
       display: flex;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1280px) {
       flex-direction: column;
       max-width: 425px;
     }
@@ -41,30 +41,26 @@
 
       &_fox {
         position: absolute;
-        left: -80px;
-        top: -50px;
+        top: -130px;
 
         @media screen and (min-width: 375px) {
-          top: -90px;
           left: -60px;
         }
 
         @media screen and (min-width: 425px) {
-          top: -110px;
           left: -60px;
         }
 
         @media screen and (min-width: 480px) {
-          top: -144px;
           left: -60px;
         }
 
         @media screen and (min-width: 768px) {
-          top: -220px;
+          top: -270px;
           left: 0;
         }
 
-        @media screen and (min-width: 1366px) {
+        @media screen and (min-width: 1280px) {
           top: -144px;
           left: 0;
         }
@@ -73,7 +69,7 @@
           width: 144px;
           height: 140px;
 
-          @media screen and (min-width: 1366px) {
+          @media screen and (min-width: 1280px) {
             width: 181px;
             height: 175px;
           }
@@ -90,7 +86,7 @@
           right: 0;
         }
 
-        @media screen and (min-width: 1366px) {
+        @media screen and (min-width: 1280px) {
           order: -1;
           top: -40px;
         }
@@ -98,7 +94,7 @@
         img {
           height: 382px;
 
-          @media screen and (min-width: 1366px) {
+          @media screen and (min-width: 1280px) {
             height: 231px;
           }
         }
@@ -109,7 +105,7 @@
     &__title {
       position: relative;
 
-      &:not(:first-child){
+      &:not(:first-child) {
         margin-top: 28px;
       }
 
@@ -129,7 +125,7 @@
         gap: 100px;
       }
 
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1280px) {
         gap: 0;
       }
 
@@ -184,7 +180,7 @@
         padding-right: 140px;
       }
 
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1280px) {
         padding-right: 0;
         margin-top: -155px;
       }
@@ -197,7 +193,7 @@
         margin-top: 100px;
       }
 
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1280px) {
         margin-left: auto;
         margin-top: -320px;
       }
@@ -220,7 +216,7 @@
         }
       }
 
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1280px) {
         flex-direction: column;
         gap: 0;
         margin-top: -290px;

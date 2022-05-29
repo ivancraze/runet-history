@@ -2,50 +2,57 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 60px;
   position: relative;
 
   @media screen and (min-width: 768px) {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
-  @media screen and (min-width: 1366px) {
-    margin-top: 130px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
   }
 
   &-virus {
     display: flex;
-    justify-content: space-between;
     pointer-events: none;
+    position: absolute;
+    bottom: 200px;
+    left: 4%;
+    right: 4%;
 
     @media screen and (min-width: 768px) {
-      position: absolute;
-      right: 70px;
-      top: 60px;
+      bottom: 100px;
+      left: 13%;
+      right: 13%;
     }
 
-    @media screen and (min-width: 1366px) {
-      right: 160px;
-      top: -100px;
+    @media screen and (min-width: 1280px) {
+      //right: 160px;
+      bottom: 300px;
     }
 
     @media screen and (min-width: 1600px) {
-      right: 200px;
+      //right: 200px;
     }
 
     @media screen and (min-width: 1920px) {
-      right: 300px;
+      //right: 300px;
     }
 
     &__icon {
-
-      &_small {
+      &--left {
         width: 40px;
         height: 40px;
+        margin-right: auto;
 
         @media screen and (min-width: 768px) {
           display: none;
         }
+      }
+
+      &--right {
+        margin-left: auto;
       }
     }
   }
@@ -53,11 +60,13 @@
   &-button {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1280px) {
       z-index: 10;
       position: sticky;
-      top: 40vh;
+      top: 36vh;
+      margin-top: 120px;
     }
 
     @keyframes spin {
@@ -72,10 +81,6 @@
       &:hover img {
         animation: spin 3s infinite linear;
       }
-    }
-
-    @media screen and (min-width: 425px) {
-      margin-top: 40px;
     }
 
     &__img {
@@ -99,7 +104,7 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate3d(-50%, -50%, 0);
       cursor: pointer;
     }
   }
