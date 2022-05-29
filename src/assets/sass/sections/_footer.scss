@@ -118,7 +118,13 @@
     }
 
     &__text {
-
+      a {
+        color: black;
+        
+        &:hover {
+          color: #E13914;
+        }
+      }
       &--white {
         color: #FFFFFF;
       }

@@ -151,7 +151,6 @@ body {
 .button_grey {
   border-radius: 96px;
   background: #EEEEEE;
-  border-radius: 96px;
   font-family: "Comic CAT", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -646,6 +645,11 @@ body {
 }
 @media screen and (min-width: 1366px) {
   .planet__timeline {
+    top: -1150px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .planet__timeline {
     top: -1280px;
   }
 }
@@ -770,6 +774,12 @@ body {
     line-height: 130%;
   }
 }
+.footer-copyright__text a {
+  color: black;
+}
+.footer-copyright__text a:hover {
+  color: #E13914;
+}
 .footer-copyright__text--white {
   color: #FFFFFF;
 }
@@ -831,6 +841,7 @@ body {
   line-height: 130%;
   color: #000000;
   margin-top: 8px;
+  word-break: keep-all;
 }
 .results__text:first-of-type {
   margin-top: 25px;
@@ -859,7 +870,7 @@ body {
 }
 .results-img__dance {
   position: absolute;
-  top: -80px;
+  top: -60px;
   left: 0;
 }
 .results-img__loader {
@@ -1014,6 +1025,30 @@ body {
   display: none;
   position: absolute;
 }
+.stickers-images__top .omskbird, .stickers-images__middle .omskbird, .stickers-images__bottom .omskbird {
+  width: 126.75px;
+  height: 128.31px;
+}
+.stickers-images__top .grogu, .stickers-images__middle .grogu, .stickers-images__bottom .grogu {
+  width: 122.12px;
+  height: 108.81px;
+}
+.stickers-images__top .ugh, .stickers-images__middle .ugh, .stickers-images__bottom .ugh {
+  width: 81.33px;
+  height: 99.74px;
+}
+.stickers-images__top .medved, .stickers-images__middle .medved, .stickers-images__bottom .medved {
+  width: 200.35px;
+  height: 171.78px;
+}
+.stickers-images__top .trollface, .stickers-images__middle .trollface, .stickers-images__bottom .trollface {
+  width: 132px;
+  height: 110.85px;
+}
+.stickers-images__top .dvachtyan, .stickers-images__middle .dvachtyan, .stickers-images__bottom .dvachtyan {
+  width: 176.44px;
+  height: 157.09px;
+}
 @media screen and (min-width: 1280px) {
   .stickers-images__top {
     display: flex;
@@ -1032,6 +1067,7 @@ body {
 @media screen and (min-width: 1024px) {
   .stickers-images__bottom {
     display: flex;
+    align-items: center;
     bottom: -65px;
     gap: 510px;
   }
@@ -1139,7 +1175,7 @@ body {
   align-content: center;
   max-width: 900px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1920px) {
   .authors-content {
     max-width: unset;
   }
@@ -1165,6 +1201,8 @@ body {
 .authors-item__image {
   width: 144px;
   height: 144px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .authors-item__image {
@@ -1178,10 +1216,12 @@ body {
 .authors-item__name {
   margin-top: 16px;
   font-weight: 500;
+  white-space: nowrap;
 }
 .authors-item__position {
   margin-top: 6px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .again__wrapper {
