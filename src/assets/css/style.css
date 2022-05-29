@@ -782,17 +782,17 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 1366px) {
-  .footer {
+  .footer--index {
     margin-top: 250px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .footer {
+  .footer--index {
     margin-top: 370px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .footer {
+  .footer--index {
     margin-top: 370px;
   }
 }

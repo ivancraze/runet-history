@@ -2,16 +2,18 @@
   margin-top: 48px;
   width: 100%;
 
-  @media screen and (min-width: 1366px) {
-    margin-top: 250px;
-  }
+  &--index {
+    @media screen and (min-width: 1366px) {
+      margin-top: 250px;
+    }
 
-  @media screen and (min-width: 1600px) {
-    margin-top: 370px;
-  }
+    @media screen and (min-width: 1600px) {
+      margin-top: 370px;
+    }
 
-  @media screen and (min-width: 1920px) {
-    margin-top: 370px;
+    @media screen and (min-width: 1920px) {
+      margin-top: 370px;
+    }
   }
 
   &-images {
