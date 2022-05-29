@@ -855,6 +855,22 @@ body {
 
 .results-img {
   display: none;
+  position: relative;
+}
+.results-img__dance {
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+.results-img__loader {
+  position: absolute;
+  left: 0;
+  animation: loader 3s infinite linear;
+}
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (min-width: 1366px) {
   .results-img {
@@ -1077,7 +1093,8 @@ body {
 .authors-title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 .authors-title__text {
   font-family: "Comic CAT", sans-serif;

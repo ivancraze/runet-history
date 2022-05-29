@@ -5,7 +5,8 @@
 .authors-title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
 
   &__text {
     font-family: 'Comic CAT', sans-serif;
