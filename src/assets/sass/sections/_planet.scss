@@ -46,19 +46,19 @@
   }
 
   &__timeline {
-    position: absolute;
     display: none;
-    width: 100%;
-    top: -1150px;
-    z-index: -1;
-    pointer-events: none;
 
     @media screen and (min-width: 1280px) {
+      z-index: -1;
+      position: absolute;
+      top: -1040px;
       display: block;
+      width: 100%;
+      pointer-events: none;
     }
 
-    @media screen and (min-width: 1600px) {
-      top: -1200px;
+    @media screen and (min-width: 1366px) {
+      top: -1280px;
     }
   }
 }

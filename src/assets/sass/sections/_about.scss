@@ -51,10 +51,6 @@
           left: -60px;
         }
 
-        @media screen and (min-width: 480px) {
-          left: -60px;
-        }
-
         @media screen and (min-width: 768px) {
           top: -270px;
           left: 0;
@@ -165,9 +161,12 @@
       color: #000000;
       margin-top: 8px;
 
-      @media screen and (min-width: 425px) {
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+      }
+
+      @media screen and (min-width: 1366px) {
         font-size: 28px;
-        line-height: 130%;
       }
 
       &_red {
