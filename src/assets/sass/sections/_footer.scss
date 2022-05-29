@@ -116,5 +116,12 @@
       font-size: 18px;
       line-height: 130%;
     }
+
+    &__text {
+
+      &--white {
+        color: #FFFFFF;
+      }
+    }
   }
 }
