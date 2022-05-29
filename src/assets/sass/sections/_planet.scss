@@ -3,6 +3,7 @@
   position: relative;
   margin-left: -10px;
   margin-right: -10px;
+  margin-top: 80px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -13,6 +14,7 @@
   @media screen and (min-width: 1280px) {
     top: 266px;
     height: 780px;
+    margin-top: 0;
   }
 
   &__item {
@@ -36,6 +38,10 @@
         margin-top: 400px;
       }
 
+      @media screen and (min-width: 1920px) {
+        margin-top: 550px;
+      }
+
       .patchcord {
         margin-right: auto;
       }
@@ -46,6 +52,10 @@
 
       @media screen and (min-width: 1280px) {
         margin-bottom: 300px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        margin-bottom: 400px;
       }
 
       .patchcord {
@@ -73,6 +83,49 @@
       bottom: 81%;
       right: 18%;
       max-width: 35%;
+    }
+
+    .trollface {
+      position: absolute;
+      max-width: 35%;
+      bottom: 100%;
+      right: -75%;
+      z-index: 1;
+
+      @media screen and (min-width: 1024px) {
+        bottom: 80%;
+      }
+
+      @media screen and (min-width: 1280px) {
+        bottom: 115%;
+        right: 28%;
+      }
+    }
+
+    .cats {
+      position: absolute;
+      bottom: -200%;
+      right: 18%;
+      max-width: 45%;
+
+      @media screen and (min-width: 1280px) {
+        bottom: -100%;
+        right: 18%;
+        max-width: 35%;
+      }
+    }
+
+    .bug {
+      position: absolute;
+      max-width: 70%;
+      right: 225%;
+      bottom: 15%;
+
+      @media screen and (min-width: 1280px) {
+        bottom: 115%;
+        right: 60%;
+        max-width: 45%;
+      }
     }
   }
 
@@ -110,9 +163,13 @@
     }
 
     svg {
-      display: block;
-      width: 96px;
-      height: 96px;
+      display: none;
+
+      @media screen and (min-width: 1366px) {
+        display: block;
+        width: 96px;
+        height: 96px;
+      }
     }
   }
 

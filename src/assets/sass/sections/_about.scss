@@ -43,13 +43,15 @@
 
       &_fox {
         position: absolute;
-        top: -130px;
+        top: -67px;
+        left: -60px;
 
         @media screen and (min-width: 375px) {
           left: -60px;
         }
 
         @media screen and (min-width: 425px) {
+          top: -100px;
           left: -60px;
         }
 
@@ -211,10 +213,6 @@
         margin-top: 100px;
         gap: 50px;
         flex-direction: row-reverse;
-
-        > .about-item__img {
-          padding-top: 70px;
-        }
       }
 
       @media screen and (min-width: 1280px) {
@@ -239,6 +237,31 @@
 
       @media screen and (min-width: 1600px) {
         margin-top: -150px;
+      }
+    }
+  }
+
+  &-timeline {
+    position: relative;
+    display: none;
+
+    @media screen and (min-width: 1366px) {
+      display: block;
+    }
+
+    img {
+      position: absolute;
+      top: -1261px;
+      right: -30%;
+
+      @media screen and (min-width: 1600px) {
+        top: -1200px;
+        right: -20%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        top: -1160px;
+        right: -7%;
       }
     }
   }
