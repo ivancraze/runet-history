@@ -926,8 +926,9 @@ body {
 }
 
 .stickers {
+  position: relative;
   margin-top: 50px;
-  background: #EEEEEE;
+  background: #eee;
   border-radius: 48px;
   padding: 40px 20px;
   text-align: center;
@@ -1000,9 +1001,14 @@ body {
 }
 
 .stickers-images__wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
+  pointer-events: none;
 }
 .stickers-images__top, .stickers-images__middle, .stickers-images__bottom {
   display: none;
@@ -1011,21 +1017,22 @@ body {
 @media screen and (min-width: 1280px) {
   .stickers-images__top {
     display: flex;
-    top: -390px;
+    top: -60px;
     gap: 1000px;
   }
 }
 @media screen and (min-width: 1600px) {
   .stickers-images__middle {
     display: flex;
-    top: -200px;
+    top: 60%;
+    transform: translate3d(0, -50%, 0);
     gap: 1200px;
   }
 }
 @media screen and (min-width: 1024px) {
   .stickers-images__bottom {
     display: flex;
-    top: -70px;
+    bottom: -65px;
     gap: 510px;
   }
 }
