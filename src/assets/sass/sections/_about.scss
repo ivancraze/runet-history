@@ -1,7 +1,6 @@
 .about {
   margin-top: 40px;
 
-
   @media screen and (min-width: 768px) {
     margin-top: 60px;
   }
@@ -9,6 +8,9 @@
   @media screen and (min-width: 1280px) {
     margin-top: 0;
     width: 100%;
+
+    // TODO: проработать на бОльших разрешениях
+    margin-bottom: -200px;
   }
 
   &-item {

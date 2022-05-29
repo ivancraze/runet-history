@@ -16,7 +16,7 @@
   }
 
   &__item {
-    box-shadow: 0 0 1px red;
+    position: relative;
 
     &--left,
     &--right {
@@ -36,7 +36,7 @@
         margin-top: 400px;
       }
 
-      img {
+      .patchcord {
         margin-right: auto;
       }
     }
@@ -48,7 +48,7 @@
         margin-bottom: 300px;
       }
 
-      img {
+      .patchcord {
         margin-left: auto;
       }
     }
@@ -60,15 +60,59 @@
       display: block;
       max-width: 100%;
     }
+
+    .men {
+      position: absolute;
+      bottom: 8%;
+      left: 11%;
+      max-width: 35%;
+    }
+
+    .vel {
+      position: absolute;
+      bottom: 81%;
+      right: 18%;
+      max-width: 35%;
+    }
   }
 
   .gloving {
-    width: 96px;
-    height: 96px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(#000, .05);
+
+    &:after,
+    &:before {
+      border-radius: 50%;
+      position: absolute;
+      content: '';
+    }
+
+    &:before {
+      top: -50px;
+      bottom: -50px;
+      left: -50px;
+      right: -50px;
+      background-color: rgba(#000, .03);
+    }
+
+    &:after {
+      top: -100px;
+      bottom: -100px;
+      left: -100px;
+      right: -100px;
+      background-color: rgba(#000, .02);
+    }
 
     svg {
       display: block;
-      max-width: 100%;
+      width: 96px;
+      height: 96px;
     }
   }
 
