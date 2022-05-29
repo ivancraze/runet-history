@@ -15,6 +15,7 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   &__title {
@@ -44,7 +45,30 @@
   }
 
   &__text {
-    margin-top: 25px;
+    font-family: 'Onest', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+    margin-top: 8px;
+
+    &:first-of-type {
+      margin-top: 25px;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 28px;
+      margin-top: 16px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      max-width: 600px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      max-width: 720px;
+    }
   }
 }
 
@@ -53,5 +77,11 @@
 
   @media screen and (min-width: 1366px) {
     display: block;
+    min-width: 466px;
+    min-height: 466px;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
