@@ -119,6 +119,29 @@
         }
       }
 
+      &_lebedev {
+        width: 240px;
+        height: 213px;
+        margin: 0 auto;
+      }
+
+      &_devil {
+        img {
+          width: 107px;
+          height: 154px;
+
+          @media screen and (min-width: 480px) {
+            width: 145px;
+            height: 208px;
+          }
+
+          @media screen and (min-width: 1366px) {
+            width: 120px;
+            height: 173px;
+          }
+        }
+      }
+
     }
 
     &__title {

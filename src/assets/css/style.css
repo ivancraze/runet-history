@@ -468,6 +468,27 @@ body {
     height: 377px;
   }
 }
+.about-item__img_lebedev {
+  width: 240px;
+  height: 213px;
+  margin: 0 auto;
+}
+.about-item__img_devil img {
+  width: 107px;
+  height: 154px;
+}
+@media screen and (min-width: 480px) {
+  .about-item__img_devil img {
+    width: 145px;
+    height: 208px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .about-item__img_devil img {
+    width: 120px;
+    height: 173px;
+  }
+}
 .about-item__title {
   position: relative;
 }
@@ -1144,7 +1165,6 @@ body {
 }
 .stickers__title {
   font-family: "Comic CAT", sans-serif;
-  font-style: italic;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
@@ -1208,10 +1228,6 @@ body {
   width: 126.75px;
   height: 128.31px;
 }
-.stickers-images__top .grogu, .stickers-images__middle .grogu, .stickers-images__bottom .grogu {
-  width: 122.12px;
-  height: 108.81px;
-}
 .stickers-images__top .ugh, .stickers-images__middle .ugh, .stickers-images__bottom .ugh {
   width: 81.33px;
   height: 99.74px;
@@ -1267,22 +1283,26 @@ body {
   align-items: center;
 }
 .history__logo {
-  max-width: 280px;
+  width: 280px;
+  height: 128px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .history__logo {
-    max-width: 420px;
+    width: 420px;
+    height: 192px;
   }
 }
 @media screen and (min-width: 768px) {
   .history__logo {
-    max-width: 580px;
+    width: 582px;
+    height: 266px;
   }
 }
 @media screen and (min-width: 1024px) {
   .history__logo {
-    max-width: 640px;
+    width: 640px;
+    height: 293px;
   }
 }
 .history__timeline {
@@ -1347,7 +1367,7 @@ body {
   margin: 40px auto 0;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
