@@ -471,7 +471,11 @@ body {
 .about-item__img_lebedev {
   width: 240px;
   height: 213px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+  .about-item__img_lebedev {
+    margin-right: auto;
+  }
 }
 .about-item__img_devil img {
   width: 107px;
@@ -635,26 +639,58 @@ body {
 }
 .about-timeline {
   position: relative;
+  display: block;
+}
+.about-timeline .timeline-top,
+.about-timeline .timeline-bottom {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .about-timeline .timeline-top {
+    display: block;
+    position: absolute;
+    top: -1100px;
+    right: -30%;
+  }
+  .about-timeline .timeline-bottom {
+    display: block;
+    position: absolute;
+    top: 460px;
+    right: -30%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .about-timeline .timeline-top,
+.about-timeline .timeline-bottom {
+    display: none;
+  }
+}
+.about-timeline .timeline-first {
+  position: absolute;
+  top: -1000px;
+  right: -30%;
   display: none;
 }
 @media screen and (min-width: 1366px) {
-  .about-timeline {
+  .about-timeline .timeline-first {
     display: block;
+    top: -1231px;
+    right: -33%;
   }
 }
-.about-timeline img {
-  position: absolute;
-  top: -1261px;
-  right: -30%;
+@media screen and (min-width: 1440px) {
+  .about-timeline .timeline-first {
+    right: -22%;
+  }
 }
 @media screen and (min-width: 1600px) {
-  .about-timeline img {
-    top: -1200px;
+  .about-timeline .timeline-first {
+    top: -1264px;
     right: -20%;
   }
 }
 @media screen and (min-width: 1920px) {
-  .about-timeline img {
+  .about-timeline .timeline-first {
     top: -1160px;
     right: -7%;
   }
@@ -829,6 +865,11 @@ body {
 .footer {
   margin-top: 48px;
   width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .footer--index {
+    margin-top: 150px;
+  }
 }
 @media screen and (min-width: 1366px) {
   .footer--index {
@@ -1230,12 +1271,12 @@ body {
   height: 128.31px;
 }
 .stickers-images__top .ugh, .stickers-images__middle .ugh, .stickers-images__bottom .ugh {
-  width: 81.33px;
-  height: 99.74px;
+  width: 82px;
+  height: 100px;
 }
 .stickers-images__top .medved, .stickers-images__middle .medved, .stickers-images__bottom .medved {
-  width: 200.35px;
-  height: 171.78px;
+  width: 200px;
+  height: 172px;
 }
 .stickers-images__top .trollface, .stickers-images__middle .trollface, .stickers-images__bottom .trollface {
   width: 132px;
