@@ -1129,7 +1129,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .share-img {
-    width: 290px;
+    width: 288px;
+    height: 213px;
   }
 }
 .share-img__seeds {
@@ -1346,7 +1347,6 @@ body {
 }
 .authors-title__text {
   font-family: "Comic CAT", sans-serif;
-  font-style: italic;
   font-weight: 400;
   font-size: 40px;
   line-height: 120%;
