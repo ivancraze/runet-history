@@ -122,7 +122,10 @@
       &_lebedev {
         width: 240px;
         height: 213px;
-        margin: 0 auto;
+
+        @media screen and (min-width: 1280px) {
+          margin-right: auto;
+        }
       }
 
       &_devil {
@@ -294,17 +297,26 @@
     position: relative;
     display: none;
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1280px) {
       display: block;
     }
 
     img {
       position: absolute;
-      top: -1261px;
+      top: -1000px;
       right: -30%;
 
+      @media screen and (min-width: 1366px) {
+        top: -1231px;
+        right: -33%;
+      }
+
+      @media screen and (min-width: 1440px) {
+        right: -22%;
+      }
+
       @media screen and (min-width: 1600px) {
-        top: -1200px;
+        top: -1264px;
         right: -20%;
       }
 
