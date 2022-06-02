@@ -13,11 +13,12 @@
       flex-direction: row-reverse;
       align-items: flex-start;
       justify-content: flex-end;
+      position: relative;
     }
   }
 
   &__image {
-    width: 231px;
+    width: 226px;
 
     @media screen and (min-width: 480px) {
       width: 315px;
@@ -35,11 +36,25 @@
       width: 675px;
       position: absolute;
       right: -156px;
-      bottom: 69px;
+      bottom: -485px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      right: -120px;
+      bottom: -630px;
     }
 
     img {
       max-width: 100%;
+    }
+
+    &--victorine {
+      @media screen and (min-width: 1366px) {
+        bottom: -330px;
+      }
+      @media screen and (min-width: 1600px) {
+        bottom: -630px;
+      }
     }
   }
 
@@ -52,11 +67,11 @@
     @media screen and (min-width: 1366px) {
       align-items: flex-start;
       margin: 140px 0 0 86px;
-
     }
   }
 
   &__title {
+    max-width: 840px;
 
     h1 {
       font-family: 'Comic CAT', sans-serif;
@@ -66,8 +81,10 @@
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+      margin: 0 -10px;
 
       @media screen and (min-width: 480px) {
+        margin: 0;
         font-size: 40px;
       }
 
@@ -77,6 +94,7 @@
       }
 
       @media screen and (min-width: 1366px) {
+        text-align: left;
         font-size: 78px;
         line-height: 110%;
       }
@@ -99,82 +117,3 @@
   }
 }
 
-.again-content {
-  margin-top: 40px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 480px) {
-    margin-top: 56px;
-  }
-
-  @media screen and (min-width: 1366px) {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 200px;
-    margin: 411px 0 0 86px;
-  }
-
-  &__player {
-    width: 87px;
-
-    @media screen and (min-width: 480px) {
-      width: 130px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      width: 190px;
-      align-self: center;
-    }
-
-    img {
-      max-width: 100%;
-    }
-  }
-
-  &__button {
-    margin-top: 25px;
-    font-size: 20px;
-    line-height: 130%;
-
-    @media screen and (min-width: 480px) {
-      margin-top: 40px;
-      font-size: 34px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      padding: 8px 0;
-    }
-  }
-
-  &__timeline {
-    display: none;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    margin: 0 -10px;
-    pointer-events: none;
-
-    @media screen and (min-width: 768px) {
-      display: inline;
-    }
-
-    @media screen and (min-width: 1152px) {
-      bottom: 100px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      bottom: 350px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      bottom: 105px;
-      left: -537px;
-    }
-  }
-}

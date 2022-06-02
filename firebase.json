@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "site": "runet-history-7e592",
+    "public": "src",
+    "ignore": [
+      "firebase.json",
+      "node_modules/**"
+    ]
+  }
+}

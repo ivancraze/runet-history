@@ -154,6 +154,7 @@
     }
 
     &__text {
+
       a {
         color: black;
         
@@ -161,8 +162,17 @@
           color: #E13914;
         }
       }
+
       &--white {
         color: #FFFFFF;
+
+        a {
+          color: #FFFFFF;
+
+          &:hover {
+            color: #E13914;
+          }
+        }
       }
     }
   }
