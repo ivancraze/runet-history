@@ -161,6 +161,11 @@ body {
 .button_grey:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
+.button_grey--maestro:hover {
+  color: #000;
+  background: #EEEEEE;
+  box-shadow: 0 2px 14px rgba(5, 4, 4, 0.8);
+}
 @media screen and (min-width: 480px) {
   .button {
     font-size: 24px;
@@ -1030,6 +1035,15 @@ body {
 .footer-copyright__text--white a:hover {
   color: #E13914;
 }
+.footer-copyright__text--maestro {
+  color: #FFFFFF;
+}
+.footer-copyright__text--maestro a {
+  color: #FFFFFF;
+}
+.footer-copyright__text--maestro a:hover {
+  color: #000;
+}
 
 .results {
   margin-top: 25px;
@@ -1531,6 +1545,38 @@ body {
     bottom: -630px;
   }
 }
+@media screen and (min-width: 480px) {
+  .again__image--maestro {
+    width: 315px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .again__image--maestro {
+    width: 388px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .again__image--maestro {
+    width: 487px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .again__image--maestro {
+    width: 783px;
+    bottom: -580px;
+    right: -120px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .again__image--maestro {
+    right: -90px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .again__image--maestro {
+    right: 40px;
+  }
+}
 .again__content {
   display: flex;
   flex-direction: column;
@@ -1574,6 +1620,9 @@ body {
     font-size: 78px;
     line-height: 110%;
   }
+}
+.again__title--maestro {
+  max-width: 700px;
 }
 .again__text {
   margin-top: 12px;
@@ -1648,6 +1697,7 @@ body {
 @media screen and (min-width: 768px) {
   .again-content__victorine .victorine {
     padding: 0 19px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -1670,6 +1720,10 @@ body {
   .again-content__victorine .victorine__progress p {
     font-size: 18px;
   }
+}
+.again-content__victorine .victorine__progress--maestro p {
+  font-weight: 500;
+  color: #000;
 }
 .again-content__victorine .victorine__question {
   margin-top: 8px;
@@ -1704,6 +1758,9 @@ body {
   .again-content__victorine .victorine__answers {
     gap: 40px;
   }
+}
+.again-content__victorine .victorine__answers--maestro .victorine__button {
+  background: #ED8872;
 }
 .again-content__victorine .victorine__button {
   background: #292929;
@@ -1922,4 +1979,7 @@ body {
 
 .body--black {
   background-color: black;
+}
+.body--red {
+  background-color: #E13914;
 }

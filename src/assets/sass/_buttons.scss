@@ -56,10 +56,21 @@
       background: #E13914;
       box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
     }
+
     &:disabled {
       color: rgba(255, 255, 255, 0.4);
     }
+
+    &--maestro {
+      &:hover {
+        color: #000;
+        background: #EEEEEE;
+        box-shadow: 0 2px 14px rgba(5, 4, 4, 0.8);
+      }
+    }
   }
+
+
 
   @media screen and (min-width: 480px) {
     font-size: 24px;

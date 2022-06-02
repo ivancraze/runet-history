@@ -49,11 +49,42 @@
     }
 
     &--victorine {
+
       @media screen and (min-width: 1366px) {
         bottom: -330px;
       }
+
       @media screen and (min-width: 1600px) {
         bottom: -630px;
+      }
+    }
+
+    &--maestro {
+
+      @media screen and (min-width: 480px) {
+        width: 315px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 388px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        width: 487px;
+      }
+
+      @media screen and (min-width: 1366px) {
+        width: 783px;
+        bottom: -580px;
+        right: -120px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        right: -90px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        right: 40px;
       }
     }
   }
@@ -98,6 +129,10 @@
         font-size: 78px;
         line-height: 110%;
       }
+    }
+
+    &--maestro {
+      max-width: 700px;
     }
   }
 
