@@ -1802,6 +1802,30 @@ body {
   font-size: 18px;
   line-height: 130%;
 }
+.again-content__victorine .victorine__button--wrong {
+  position: relative;
+}
+.again-content__victorine .victorine__button--wrong::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  background-image: url("../img/victorine/wrong.svg");
+}
+.again-content__victorine .victorine__button--correct {
+  position: relative;
+}
+.again-content__victorine .victorine__button--correct::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  background-image: url("../img/victorine/correct.svg");
+}
 .again-content__player {
   width: 87px;
 }

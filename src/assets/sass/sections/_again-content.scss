@@ -164,8 +164,33 @@
           line-height: 130%;
         }
 
-        &--wrong {}
-        &--correct {}
+        &--wrong {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 8%;
+            top: 8%;
+            background-image: url('../img/victorine/wrong.svg');
+          }
+        }
+
+        &--correct {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 8%;
+            top: 8%;
+            background-image: url('../img/victorine/correct.svg');
+          }
+        }
       }
     }
   }

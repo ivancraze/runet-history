@@ -1,6 +1,8 @@
 const headElem = document.getElementById("victorine__head");
 const buttonsElem = document.getElementById("victorine__buttons");
 const pagesElem = document.getElementById("victorine__pages");
+const playerLives = document.getElementById("player__lives");
+let playerLivesValue = 3;
 
 //Класс, который представляет сам тест
 class Quiz
@@ -142,7 +144,7 @@ const questions =
         new Question("Что начали делать пользователи раньше: знакомиться или читать анекдоты?",
             [
                 new Answer("Анекдот.ру", 1, "./assets/img/victorine/joke.png"),
-                new Answer("Чат-кроватка", 0, "./assets/img/victorine/bed.png")
+                new Answer("Чат «Кроватка»", 0, "./assets/img/victorine/bed.png")
             ]),
 
         new Question("Кто сказал «О-оу»?",
@@ -153,10 +155,18 @@ const questions =
 
         new Question("Где можно посмотреть в «Бездну»?",
             [
-                new Answer("Хабр", 0, "./assets/img/victorine/habr.png"),
+                new Answer("Хабр", 1, "./assets/img/victorine/habr.png"),
                 new Answer("Башорг", 0, "./assets/img/victorine/bashorg.png")
             ]),
     ];
+
+const srcImagesLives = {
+    0: "./assets/img/hydra/hearts-empty.png",
+    1: "./assets/img/hydra/hearts-one-filled.png",
+    2: "./assets/img/hydra/hearts-two-filled.png",
+    3: "./assets/img/hydra/hearts-filled.png",
+    4: "./assets/img/hydra/hearts-win.png",
+}
 
 //Сам тест
 const quiz = new Quiz(1, questions, results);
@@ -182,31 +192,27 @@ function Update()
             let image = document.createElement("img");
 
             image.src = quiz.questions[quiz.current].answers[i].picture;
-
             btn.className = "victorine__button";
-
             btn.innerHTML = quiz.questions[quiz.current].answers[i].text;
-
             btn.setAttribute("index", i);
-
             buttonsElem.appendChild(btn);
             btn.prepend(image);
         }
-
+        //Обновляем счетчик жизней
+        playerLives.src = srcImagesLives[playerLivesValue];
         //Выводим номер текущего вопроса
         pagesElem.innerHTML = (quiz.current + 1) + " / " + quiz.questions.length;
-
-        const playerRating = []
-
         //Вызываем функцию, которая прикрепит события к новым кнопкам
         Init();
     }
     else
     {
-        //Если это конец, то выводим результат
-        buttonsElem.innerHTML = "";
-        headElem.innerHTML = quiz.results[quiz.result].text;
-        pagesElem.innerHTML = "Очки: " + quiz.score;
+        //Если это конец, то редирект на результат
+        if (playerLivesValue > 0) {
+            window.location.href = "hydra-loose.html";
+        } else {
+            window.location.href = "hydra-win.html";
+        }
     }
 }
 
@@ -232,16 +238,17 @@ function Click(index)
     let btns = document.getElementsByClassName("victorine__button");
 
     //Если это тест с правильными ответами, то мы подсвечиваем правильный ответ зелёным, а неправильный - красным
-    if(quiz.type == 1)
+    if(quiz.type === 1)
     {
-        if(correct >= 0)
+        if(correct >= index)
         {
             btns[correct].className = "victorine__button victorine__button--correct";
         }
 
-        if(index != correct)
+        if(index !== correct)
         {
             btns[index].className = "victorine__button victorine__button--wrong";
+            playerLivesValue--;
         }
     }
     else

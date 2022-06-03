@@ -1,6 +1,8 @@
 const headElem = document.getElementById("victorine__head");
 const buttonsElem = document.getElementById("victorine__buttons");
 const pagesElem = document.getElementById("victorine__pages");
+const playerLives = document.getElementById("player__lives");
+let playerLivesValue = 3;
 
 //Класс, который представляет сам тест
 class Quiz
@@ -141,22 +143,30 @@ const questions =
     [
         new Question("Где больше пользователей Рунета?",
             [
-                new Answer("ВК", 1, "./assets/img/victorine/vk.png"),
+                new Answer("ВКонтакте", 1, "./assets/img/victorine/vk.png"),
                 new Answer("Одноклассники", 0, "./assets/img/victorine/ok.png")
             ]),
 
         new Question("Кто дарит статуэтку «Кибермастера»?",
             [
-                new Answer("Премия рунета", 0, "./assets/img/victorine/runet.png"),
+                new Answer("Премия Рунета", 0, "./assets/img/victorine/runet.png"),
                 new Answer("Золотой сайт", 1, "./assets/img/victorine/goldsite.png")
             ]),
 
         new Question("Куда можно зайти без приглашения?",
             [
-                new Answer("Лурк", 1, "./assets/img/victorine/lurka.png"),
-                new Answer("Лепра", 0, "./assets/img/victorine/lepra.png")
+                new Answer("Луркоморье", 1, "./assets/img/victorine/lurka.png"),
+                new Answer("Лепрозорий", 0, "./assets/img/victorine/lepra.png")
             ]),
     ];
+
+const srcImagesLives = {
+    0: "./assets/img/hydra/hearts-empty.png",
+    1: "./assets/img/hydra/hearts-one-filled--white.png",
+    2: "./assets/img/hydra/hearts-two-filled--white.png",
+    3: "./assets/img/hydra/hearts-filled--white.png",
+    4: "./assets/img/hydra/hearts-win.png",
+}
 
 //Сам тест
 const quiz = new Quiz(1, questions, results);
@@ -192,21 +202,21 @@ function Update()
             buttonsElem.appendChild(btn);
             btn.prepend(image);
         }
-
+        //Обновляем счетчик жизней
+        playerLives.src = srcImagesLives[playerLivesValue];
         //Выводим номер текущего вопроса
         pagesElem.innerHTML = (quiz.current + 1) + " / " + quiz.questions.length;
-
-        const playerRating = []
-
         //Вызываем функцию, которая прикрепит события к новым кнопкам
         Init();
     }
     else
     {
-        //Если это конец, то выводим результат
-        buttonsElem.innerHTML = "";
-        headElem.innerHTML = quiz.results[quiz.result].text;
-        pagesElem.innerHTML = "Очки: " + quiz.score;
+        //Если это конец, то редирект на результат
+        if (playerLivesValue > 0) {
+            window.location.href = "maestro-loose.html";
+        } else {
+            window.location.href = "maestro-win.html";
+        }
     }
 }
 
@@ -232,16 +242,17 @@ function Click(index)
     let btns = document.getElementsByClassName("victorine__button");
 
     //Если это тест с правильными ответами, то мы подсвечиваем правильный ответ зелёным, а неправильный - красным
-    if(quiz.type == 1)
+    if(quiz.type === 1)
     {
-        if(correct >= 0)
+        if(correct >= index)
         {
             btns[correct].className = "victorine__button victorine__button--correct";
         }
 
-        if(index != correct)
+        if(index !== correct)
         {
             btns[index].className = "victorine__button victorine__button--wrong";
+            playerLivesValue--;
         }
     }
     else
