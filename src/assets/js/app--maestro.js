@@ -149,8 +149,8 @@ const questions =
 
         new Question("Кто дарит статуэтку «Кибермастера»?",
             [
-                new Answer("Премия Рунета", 0, "./assets/img/victorine/runet.png"),
-                new Answer("Золотой сайт", 1, "./assets/img/victorine/goldsite.png")
+                new Answer("Золотой сайт", 1, "./assets/img/victorine/goldsite.png"),
+                new Answer("Премия Рунета", 0, "./assets/img/victorine/runet.png")
             ]),
 
         new Question("Куда можно зайти без приглашения?",
