@@ -1820,6 +1820,11 @@ body {
 .again-content__victorine .victorine__answers--maestro .victorine__button {
   background: #ED8872;
 }
+.again-content__victorine .victorine__answers--maestro .victorine__button:hover {
+  background: #ED8872;
+  transition: 0.1s linear;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.8);
+}
 .again-content__victorine .victorine__button {
   background: #292929;
   border-radius: 48px;
@@ -1827,10 +1832,16 @@ body {
   height: 237px;
   padding: 25px 0;
   display: flex;
+  font-weight: 500;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+}
+.again-content__victorine .victorine__button:hover {
+  transition: 0.3s linear;
+  background: #E13914;
+  box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
 }
 @media screen and (min-width: 768px) {
   .again-content__victorine .victorine__button {

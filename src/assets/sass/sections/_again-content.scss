@@ -132,6 +132,12 @@
         &--maestro {
           .victorine__button {
             background: #ED8872;
+
+            &:hover {
+              background: #ED8872;
+              transition: .1s linear;
+              box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.8);
+            }
           }
         }
       }
@@ -143,10 +149,17 @@
         height: 237px;
         padding: 25px 0;
         display: flex;
+        font-weight: 500;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         cursor: pointer;
+
+        &:hover {
+          transition: .3s linear;
+          background: #E13914;
+          box-shadow: 0 2px 14px rgba(225, 57, 20, 0.8);
+        }
 
         @media screen and (min-width: 768px) {
           height: 320px;
