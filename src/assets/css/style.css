@@ -161,6 +161,9 @@ body {
 .button_grey:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
+.button_grey--maestro {
+  padding: 12px 40px;
+}
 .button_grey--maestro:hover {
   color: #000;
   background: #EEEEEE;
@@ -1529,20 +1532,56 @@ body {
 @media screen and (min-width: 1600px) {
   .again__image {
     right: -120px;
-    bottom: -630px;
+    bottom: -608px;
   }
 }
 .again__image img {
   max-width: 100%;
 }
 @media screen and (min-width: 1366px) {
+  .again__image--hydra {
+    bottom: -434px;
+    left: 62%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .again__image--hydra {
+    bottom: -667px;
+    left: 65%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .again__image--hydra {
+    left: 58%;
+  }
+}
+@media screen and (min-width: 1366px) {
   .again__image--victorine {
-    bottom: -330px;
+    bottom: -532px;
+    left: 63%;
+    width: 782px;
   }
 }
 @media screen and (min-width: 1600px) {
   .again__image--victorine {
-    bottom: -630px;
+    left: 53%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .again__image--victorine {
+    left: 58%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .again__image--victorine-hydra {
+    bottom: -350px;
+    width: 675px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .again__image--victorine-hydra {
+    bottom: -582px;
+    left: 65%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1563,8 +1602,9 @@ body {
 @media screen and (min-width: 1366px) {
   .again__image--maestro {
     width: 783px;
-    bottom: -580px;
-    right: -120px;
+    bottom: -577px;
+    right: -271px;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1639,6 +1679,11 @@ body {
     font-size: 28px;
   }
 }
+@media screen and (min-width: 1366px) {
+  .again__text {
+    text-align: left;
+  }
+}
 
 .again-content {
   margin-top: 40px;
@@ -1657,7 +1702,7 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-end;
-    margin: 300px 0 0 86px;
+    margin: 300px 86px 0 86px;
   }
   .again-content::before {
     flex: 1;
@@ -1667,19 +1712,30 @@ body {
 .again-content--victorine {
   margin-top: 28px;
 }
-.again-content__victorine {
-  width: 100%;
+@media screen and (min-width: 1366px) {
+  .again-content--victorine {
+    margin-top: 90px;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .again-content--victorine {
+    gap: 0;
+  }
+}
+.again-content--hydra {
+  margin: 342px 86px 0 86px;
+}
+@media screen and (min-width: 768px) {
+  .again-content__victorine {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1366px) {
   .again-content__victorine {
-    width: 50%;
-    margin-right: 60px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .again-content__victorine {
-    width: 40%;
-    margin-right: 60px;
+    width: fit-content;
+    padding-bottom: 8px;
+    flex: 1;
   }
 }
 .again-content__victorine .victorine {
@@ -1703,7 +1759,7 @@ body {
 @media screen and (min-width: 1366px) {
   .again-content__victorine .victorine {
     padding: 0;
-    margin-top: 120px;
+    margin-top: 0;
   }
 }
 .again-content__victorine .victorine__progress {
@@ -1727,6 +1783,7 @@ body {
 }
 .again-content__victorine .victorine__question {
   margin-top: 8px;
+  max-width: 680px;
 }
 .again-content__victorine .victorine__question p {
   font-family: "Onest", sans-serif;
@@ -1734,6 +1791,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  white-space: nowrap;
 }
 @media screen and (min-width: 480px) {
   .again-content__victorine .victorine__question p {
@@ -1889,7 +1947,7 @@ body {
 }
 @media screen and (min-width: 1366px) {
   .again-content__button {
-    padding: 10px 0;
+    padding-bottom: 18px;
     flex: 1;
   }
 }
@@ -1915,7 +1973,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .again-content__timeline {
-    bottom: 350px;
+    bottom: 640px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -2002,8 +2060,12 @@ body {
 }
 
 .body--black {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: black;
 }
 .body--red {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #E13914;
 }

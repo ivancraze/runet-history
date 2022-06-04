@@ -13,7 +13,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-end;
-    margin: 300px 0 0 86px;
+    margin: 300px 86px 0 86px;
 
     &::before {
       flex: 1;
@@ -23,21 +23,31 @@
 
   &--victorine {
     margin-top: 28px;
+
+    @media screen and (min-width: 1366px) {
+      margin-top: 90px;
+      gap: 60px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      gap: 0;
+    }
+  }
+
+  &--hydra {
+    margin: 342px 86px 0 86px;
   }
 
   &__victorine {
-    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1366px) {
-      width: 50%;
-      margin-right: 60px;
+      width: fit-content;
+      padding-bottom: 8px;
+      flex: 1;
     }
-
-    @media screen and (min-width: 1600px) {
-      width: 40%;
-      margin-right: 60px;
-    }
-
 
     .victorine {
       font-family: 'Onest', sans-serif;
@@ -58,7 +68,7 @@
 
       @media screen and (min-width: 1366px) {
         padding: 0;
-        margin-top: 120px;
+        margin-top: 0;
       }
 
       &__progress {
@@ -86,6 +96,7 @@
 
       &__question {
         margin-top: 8px;
+        max-width: 680px;
 
         p {
           font-family: 'Onest', sans-serif;
@@ -93,6 +104,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 130%;
+          white-space: nowrap;
 
           @media screen and (min-width: 480px) {
             font-size: 24px;
@@ -265,7 +277,7 @@
     }
 
     @media screen and (min-width: 1366px) {
-      padding: 10px 0;
+      padding-bottom: 18px;
       flex: 1;
     }
   }
@@ -289,7 +301,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      bottom: 350px;
+      bottom: 640px;
     }
 
     @media screen and (min-width: 1366px) {

@@ -41,21 +41,56 @@
 
     @media screen and (min-width: 1600px) {
       right: -120px;
-      bottom: -630px;
+      bottom: -608px;
     }
 
     img {
       max-width: 100%;
     }
 
-    &--victorine {
-
+    &--hydra {
       @media screen and (min-width: 1366px) {
-        bottom: -330px;
+        bottom: -434px;
+        left: 62%;
       }
 
       @media screen and (min-width: 1600px) {
-        bottom: -630px;
+        bottom: -667px;
+        left: 65%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        left: 58%;
+      }
+    }
+
+    &--victorine {
+
+      @media screen and (min-width: 1366px) {
+        bottom: -532px;
+        left: 63%;
+        width: 782px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        left: 53%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        left: 58%;
+      }
+    }
+
+    &--victorine-hydra {
+
+      @media screen and (min-width: 1366px) {
+        bottom: -350px;
+        width: 675px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        bottom: -582px;
+        left: 65%;
       }
     }
 
@@ -75,8 +110,9 @@
 
       @media screen and (min-width: 1366px) {
         width: 783px;
-        bottom: -580px;
-        right: -120px;
+        bottom: -577px;
+        right: -271px;
+        z-index: 2;
       }
 
       @media screen and (min-width: 1600px) {
@@ -148,6 +184,10 @@
 
     @media screen and (min-width: 480px) {
       font-size: 28px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      text-align: left;
     }
   }
 }

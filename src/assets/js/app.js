@@ -147,7 +147,7 @@ const questions =
                 new Answer("Чат «Кроватка»", 0, "./assets/img/victorine/bed.png")
             ]),
 
-        new Question("Кто сказал «О-оу»?",
+        new Question("Кто сказал «о-оу»?",
             [
                 new Answer("Аська", 1, "./assets/img/victorine/icq.png"),
                 new Answer("Масяня", 0, "./assets/img/victorine/masyanya.png")

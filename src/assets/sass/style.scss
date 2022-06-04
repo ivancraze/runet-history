@@ -71,10 +71,14 @@
 
 .body {
   &--black {
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: black;
   }
 
   &--red {
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: #E13914;
   }
 }
