@@ -95,6 +95,7 @@
     }
 
     &--maestro {
+      width: 280px;
 
       @media screen and (min-width: 480px) {
         width: 315px;
@@ -148,9 +149,8 @@
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
-      margin: 0 -10px;
 
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 400px) {
         margin: 0;
         font-size: 40px;
       }

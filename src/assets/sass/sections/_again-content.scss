@@ -35,13 +35,13 @@
   }
 
   &--hydra {
-    margin: 342px 86px 0 86px;
+    @media screen and (min-width: 1366px) {
+      margin: 342px 86px 0 86px;
+    }
   }
 
   &__victorine {
-    @media screen and (min-width: 768px) {
-      width: 100%;
-    }
+    width: 100%;
 
     @media screen and (min-width: 1366px) {
       width: fit-content;
@@ -96,7 +96,7 @@
 
       &__question {
         margin-top: 8px;
-        max-width: 680px;
+        padding: 0 1px;
 
         p {
           font-family: 'Onest', sans-serif;
@@ -104,10 +104,14 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 130%;
-          white-space: nowrap;
 
           @media screen and (min-width: 480px) {
             font-size: 24px;
+          }
+
+          @media screen and (min-width: 1366px) {
+            max-width: 680px;
+            white-space: nowrap;
           }
         }
       }
