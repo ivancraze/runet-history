@@ -1782,6 +1782,11 @@ body {
     font-size: 18px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .again-content__victorine .victorine {
+    padding: 0 60px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .again-content__victorine .victorine {
     padding: 0;
