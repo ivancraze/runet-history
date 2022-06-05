@@ -139,6 +139,18 @@
       }
     }
 
+    &--maestro-gif-victorine {
+      position: absolute;
+
+      @media screen and (min-width: 1280px) {
+        bottom: -582px;
+        width: 730px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        width: 782px;
+      }
+    }
   }
 
   &__content {

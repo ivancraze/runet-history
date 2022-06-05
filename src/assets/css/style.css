@@ -1638,6 +1638,20 @@ body {
     width: 730px;
   }
 }
+.again__image--maestro-gif-victorine {
+  position: absolute;
+}
+@media screen and (min-width: 1280px) {
+  .again__image--maestro-gif-victorine {
+    bottom: -582px;
+    width: 730px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .again__image--maestro-gif-victorine {
+    width: 782px;
+  }
+}
 .again__content {
   display: flex;
   flex-direction: column;
