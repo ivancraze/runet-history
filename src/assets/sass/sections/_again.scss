@@ -20,6 +20,10 @@
   &__image {
     width: 226px;
 
+    @media screen and (min-width: 375px) {
+      width: 300px;
+    }
+
     @media screen and (min-width: 480px) {
       width: 315px;
     }
@@ -182,6 +186,10 @@
     line-height: 130%;
     text-align: center;
     color: #FFFFFF;
+
+    @media screen and (min-width: 375px) {
+      font-size: 24px;
+    }
 
     @media screen and (min-width: 480px) {
       font-size: 28px;

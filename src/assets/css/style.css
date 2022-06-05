@@ -127,6 +127,11 @@ body {
 .button_red:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
+.button_red--hydra:hover {
+  box-shadow: none;
+  background: #FFFFFF;
+  color: black;
+}
 .button_black {
   border-radius: 96px;
   background: #000000;
@@ -162,13 +167,10 @@ body {
 .button_grey:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
-.button_grey--maestro {
-  padding: 12px 40px;
-}
 .button_grey--maestro:hover {
-  color: #000;
-  background: #EEEEEE;
-  box-shadow: 0 2px 14px rgba(5, 4, 4, 0.8);
+  box-shadow: none;
+  background: #000000;
+  color: white;
 }
 @media screen and (min-width: 480px) {
   .button {
@@ -1507,6 +1509,11 @@ body {
 .again__image {
   width: 226px;
 }
+@media screen and (min-width: 375px) {
+  .again__image {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 480px) {
   .again__image {
     width: 315px;
@@ -1678,6 +1685,11 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (min-width: 375px) {
+  .again__text {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 480px) {
   .again__text {
     font-size: 28px;
@@ -1809,6 +1821,10 @@ body {
 @media screen and (min-width: 480px) {
   .again-content__victorine .victorine__question p {
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .again-content__victorine .victorine__question p {
     padding-right: 200px;
   }
 }
@@ -1820,7 +1836,7 @@ body {
   }
 }
 .again-content__victorine .victorine__answers {
-  margin-top: 24px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1844,7 +1860,7 @@ body {
 .again-content__victorine .victorine__answers--maestro .victorine__button:hover {
   background: #ED8872;
   transition: 0.1s linear;
-  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
 }
 .again-content__victorine .victorine__button {
   background: #292929;
