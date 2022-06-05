@@ -1521,7 +1521,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .again__image {
-    width: 388px;
+    width: 393px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1641,10 +1641,13 @@ body {
     margin: 140px 0 0 86px;
   }
 }
+.again__title {
+  max-width: 840px;
+}
 .again__title h1 {
   font-family: "Comic CAT", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 120%;
   text-align: center;
   text-transform: uppercase;
@@ -1653,7 +1656,6 @@ body {
 @media screen and (min-width: 400px) {
   .again__title h1 {
     margin: 0;
-    font-size: 40px;
   }
 }
 @media screen and (min-width: 768px) {
