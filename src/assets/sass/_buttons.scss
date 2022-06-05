@@ -73,6 +73,7 @@
     }
 
     &--maestro {
+      padding: 12px 40px;
 
       &:hover {
         box-shadow: none;
@@ -81,8 +82,6 @@
       }
     }
   }
-
-
 
   @media screen and (min-width: 480px) {
     font-size: 24px;

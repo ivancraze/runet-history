@@ -167,6 +167,9 @@ body {
 .button_grey:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
+.button_grey--maestro {
+  padding: 12px 40px;
+}
 .button_grey--maestro:hover {
   box-shadow: none;
   background: #000000;
