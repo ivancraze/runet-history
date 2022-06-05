@@ -1594,7 +1594,7 @@ body {
   }
 }
 .again__image--maestro {
-  width: 280px;
+  width: 281px;
 }
 @media screen and (min-width: 480px) {
   .again__image--maestro {
@@ -1627,6 +1627,15 @@ body {
 @media screen and (min-width: 1920px) {
   .again__image--maestro {
     right: 40px;
+  }
+}
+.again__image--maestro-gif {
+  position: absolute;
+}
+@media screen and (min-width: 1280px) {
+  .again__image--maestro-gif {
+    bottom: -615px;
+    width: 730px;
   }
 }
 .again__content {
