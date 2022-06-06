@@ -176,6 +176,14 @@
         align-items: center;
         cursor: pointer;
 
+        @supports (mask-image: paint(smooth-corners)) {
+          .el.is-loaded {
+            border-radius: 0;
+            mask-image: paint(smooth-corners);
+            --smooth-corners: 6;
+          }
+        }
+
         &:hover {
           transition: .1s linear;
           box-shadow: 0 0 10px 4px rgba(134, 134, 134, 0.8);

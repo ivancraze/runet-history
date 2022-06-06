@@ -1905,6 +1905,13 @@ body {
   align-items: center;
   cursor: pointer;
 }
+@supports (mask-image: paint(smooth-corners)) {
+  .again-content__victorine .victorine__button .el.is-loaded {
+    border-radius: 0;
+    mask-image: paint(smooth-corners);
+    --smooth-corners: 6;
+  }
+}
 .again-content__victorine .victorine__button:hover {
   transition: 0.1s linear;
   box-shadow: 0 0 10px 4px rgba(134, 134, 134, 0.8);
