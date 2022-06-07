@@ -1076,6 +1076,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 1280px) {
+  .results__wrapper {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .results__wrapper {
+    gap: 0;
+  }
+}
 .results__title {
   font-family: "Comic CAT", sans-serif;
   font-weight: 400;
