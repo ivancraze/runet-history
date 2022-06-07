@@ -176,14 +176,6 @@
         align-items: center;
         cursor: pointer;
 
-        @supports (mask-image: paint(smooth-corners)) {
-          .el.is-loaded {
-            border-radius: 0;
-            mask-image: paint(smooth-corners);
-            --smooth-corners: 6;
-          }
-        }
-
         &:hover {
           transition: .1s linear;
           box-shadow: 0 0 10px 4px rgba(134, 134, 134, 0.8);
@@ -222,11 +214,11 @@
 
           &::after {
             content: '';
-            width: 40px;
-            height: 40px;
+            width: 49px;
+            height: 49px;
             position: absolute;
-            left: 8%;
-            top: 8%;
+            right: 6%;
+            top: 6%;
             background-image: url('../img/victorine/wrong.svg');
           }
         }
@@ -236,11 +228,11 @@
 
           &::after {
             content: '';
-            width: 40px;
-            height: 40px;
+            width: 53px;
+            height: 53px;
             position: absolute;
-            right: 8%;
-            top: 8%;
+            right: 7%;
+            top: 5%;
             background-image: url('../img/victorine/correct.svg');
           }
         }
@@ -303,8 +295,6 @@
           }
         }
       }
-
-
     }
   }
 
