@@ -1534,14 +1534,6 @@ body {
     font-size: 12px;
   }
 }
-.authors-item--mobile-empty {
-  flex: 1;
-}
-@media screen and (min-width: 1024px) {
-  .authors-item--mobile-empty {
-    display: none;
-  }
-}
 
 .again__wrapper {
   padding: 30px 10px 0;
