@@ -1091,6 +1091,12 @@ body {
     gap: 0;
   }
 }
+@media screen and (min-width: 1921px) {
+  .results__wrapper {
+    max-width: 1620px;
+    margin: 0 auto;
+  }
+}
 .results__title {
   font-family: "Comic CAT", sans-serif;
   font-weight: 400;
@@ -1116,6 +1122,11 @@ body {
 @media screen and (min-width: 1280px) {
   .results__title {
     font-size: 78px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .results__title {
+    max-width: 720px;
   }
 }
 .results__text {
@@ -1247,6 +1258,11 @@ body {
   .stickers {
     padding: 65px 100px;
     margin-top: 170px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .stickers {
+    margin: 170px auto 0 auto;
   }
 }
 .stickers__title {
