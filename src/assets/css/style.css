@@ -207,11 +207,6 @@ body {
     height: 332px;
   }
 }
-@media screen and (min-width: 1920px) {
-  .header .logo--main {
-    height: 399px;
-  }
-}
 .header .logo--clouds {
   height: 75px;
   overflow: hidden;
