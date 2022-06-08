@@ -120,11 +120,10 @@
       }
 
       &_lebedev {
-        width: 240px;
-        height: 213px;
 
         img {
-          width: 100%;
+          width: 240px;
+          height: 213px;
         }
 
         @media screen and (min-width: 1280px) {
