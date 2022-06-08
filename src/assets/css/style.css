@@ -486,6 +486,9 @@ body {
   width: 240px;
   height: 213px;
 }
+.about-item__img_lebedev img {
+  width: 100%;
+}
 @media screen and (min-width: 1280px) {
   .about-item__img_lebedev {
     margin-right: auto;

@@ -123,6 +123,10 @@
         width: 240px;
         height: 213px;
 
+        img {
+          width: 100%;
+        }
+
         @media screen and (min-width: 1280px) {
           margin-right: auto;
         }
