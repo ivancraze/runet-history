@@ -194,22 +194,22 @@ body {
 }
 @media screen and (min-width: 480px) {
   .header .logo--main {
-    height: 212px;
+    height: 213px;
   }
 }
 @media screen and (min-width: 1024px) {
   .header .logo--main {
-    height: 280px;
+    height: 284px;
   }
 }
 @media screen and (min-width: 1600px) {
   .header .logo--main {
-    height: 330px;
+    height: 332px;
   }
 }
 @media screen and (min-width: 1920px) {
   .header .logo--main {
-    height: 400px;
+    height: 399px;
   }
 }
 .header .logo--clouds {
